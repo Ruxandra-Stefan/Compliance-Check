@@ -2,7 +2,6 @@
 
 ## 📌 Overview
 This is a **small-scale prototype** of a larger compliance monitoring dashboard for a mortgage investment fund.  
-It uses **dummy, non-proprietary data** (10–20 sample loans) to validate:
 
 - Data ingestion pipelines
 - SQL transformations
@@ -61,3 +60,85 @@ mini_mortgage_compliance/
 │
 └── README.md
 
+
+---
+
+##  Disclaimer ##
+
+> **Note:** The dataset provided in `data/` is **entirely dummy data**, generated for educational purposes and **not proprietary**. No real customer or confidential information is included.
+
+---
+
+## Milestones ##
+
+1. **Environment Setup** – Install and configure all required tools.  
+2. **Data Loading** – Ingest CSV, JSON, and YAML formats into Snowflake.  
+3. **Data Cleaning & Transformation** – Use `pandas` and `dbt` to standardize formats.  
+4. **Validation** – Apply Great Expectations to ensure data quality.  
+5. **Visualization** – Create a basic compliance dashboard in your preferred BI tool.  
+6. **Automation** – Schedule recurring checks with Airflow.
+
+---
+
+## 📌 Status
+
+This is the **slice version** — it validates the workflow and tools before expanding to the full dataset and complex logic.
+
+---
+
+## 🛠️ Tools & Versions ## 
+
+- **Python** – 3.11  
+- **Snowflake** – Enterprise Edition  
+- **dbt** – 1.7+  
+- **Apache Airflow** – 2.8+  
+- **Great Expectations** – 0.18+  
+- **pandas** – 2.1+  
+- **Git Bash** – Latest stable  
+- **Marimo** – Latest stable (for interactive notebooks)
+
+---
+
+## How to Run This Project ##
+
+##Clone the Repository
+```bash
+git clone https://github.com/YOUR_USERNAME/mini_mortgage_compliance.git
+cd mini_mortgage_compliance
+
+2Create a Virtual Environment
+
+python -m venv venv
+source venv/bin/activate  # Mac/Linux
+venv\Scripts\activate     # Windows
+
+Install Dependencies
+pip install -r airflow/requirements.txt
+pip install dbt-core pandas great_expectations
+
+Configure Snowflake
+
+Create a .env file in the root directory with your Snowflake credentials:
+
+SNOWFLAKE_USER=your_username
+SNOWFLAKE_PASSWORD=your_password
+SNOWFLAKE_ACCOUNT=your_account
+SNOWFLAKE_WAREHOUSE=COMPUTE_WH
+SNOWFLAKE_DATABASE=COMPLIANCE_DB
+SNOWFLAKE_SCHEMA=PUBLIC
+
+Data Ingestion
+
+python scripts/ingest.py
+
+Run Transformations with dbt
+
+dbt run
+
+Validate Data with Great Expectations
+
+great_expectations checkpoint run loan_data_checkpoint
+
+Explore Data
+
+Open notebooks/exploration.ipynb in Jupyter, VS Code, or Marimo.
