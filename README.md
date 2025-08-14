@@ -8,7 +8,7 @@ This is a **small-scale prototype** of a larger compliance monitoring dashboard 
 - Basic compliance checks
 - Dashboard rendering
 
-This project is the **slice** version of the full **Mortgage Fund Compliance & KPI Dashboard** hero project, intended to prove out the technical workflow before scaling to real or larger datasets.
+This project is the **slice** version of the full **Mortgage Fund Compliance & KPI Dashboard** hero project, intended to prove out the technical workflow before scaling to a larger datasets.
 
 ---
 
