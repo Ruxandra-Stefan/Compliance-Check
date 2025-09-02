@@ -118,14 +118,6 @@ pip install dbt-core pandas great_expectations
 
 Configure Snowflake
 
-Create a .env file in the root directory with your Snowflake credentials:
-
-SNOWFLAKE_USER=ruxandra_stefan
-SNOWFLAKE_PASSWORD=XXX
-SNOWFLAKE_ACCOUNT=XXX
-SNOWFLAKE_WAREHOUSE=XXX
-SNOWFLAKE_DATABASE=XXX
-SNOWFLAKE_SCHEMA=PUBLIC
 
 Data Ingestion
 
