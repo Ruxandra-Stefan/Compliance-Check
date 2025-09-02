@@ -103,7 +103,7 @@ This is the **slice version** — it validates the workflow and tools before exp
 
 ##Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/mini_mortgage_compliance.git
+git clone https://github.com/ruxandra-stefan/mini_mortgage_compliance.git
 cd mini_mortgage_compliance
 
 2Create a Virtual Environment
@@ -120,11 +120,11 @@ Configure Snowflake
 
 Create a .env file in the root directory with your Snowflake credentials:
 
-SNOWFLAKE_USER=your_username
-SNOWFLAKE_PASSWORD=your_password
-SNOWFLAKE_ACCOUNT=your_account
-SNOWFLAKE_WAREHOUSE=COMPUTE_WH
-SNOWFLAKE_DATABASE=COMPLIANCE_DB
+SNOWFLAKE_USER=ruxandra_stefan
+SNOWFLAKE_PASSWORD=XXX
+SNOWFLAKE_ACCOUNT=XXX
+SNOWFLAKE_WAREHOUSE=XXX
+SNOWFLAKE_DATABASE=XXX
 SNOWFLAKE_SCHEMA=PUBLIC
 
 Data Ingestion
